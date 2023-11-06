@@ -1,0 +1,103 @@
+<div class="col  m-3">
+    <div class="col-md-12">
+        <div class="col-md-12 mb-5 ">
+            <h2>Nouvelle commande {{origin}}</h2>
+        </div>
+        <div class="row p-3 custom-border">
+            <div class="col-md-5 custom-border-right">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Code de la commande">
+                    </div>
+                    &nbsp;
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="Date de la commande">
+                    </div>
+                    &nbsp;
+                    <div class="form-group">
+                        <select class="form-control" aria-label="Default select example">
+                          <option selected>Sélectionner un client</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                      </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 custom-border-right">
+                <div class="col">
+                    <div class="row mt-4">
+                        <div class="col-md-1"><i class="blue-color fas fa-solid fa-circle-info"></i></div>
+                        <div class="col-md-10">Nom</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"><i class="blue-color fas fa-solid fa-circle-info"></i></div>
+                        <div class="col-md-10">Prénom</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"><i class="blue-color fa-solid fa-phone"></i></div>
+                        <div class="col-md-10">0033753614292</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"><i class="blue-color fa-solid fa-hourglass-end"></i></div>
+                        <div class="col-md-10">EN PREPARATION</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="assets/product.png" class="rounded-circle" width="130px" height="150px" />
+            </div>
+        </div>
+        <div class="row mt-2 p-3 custom-border">
+            <div class="col p-0">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Code article">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Quantité">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Prix unitaire">
+
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-success">
+                          <i class="fas fa-plus"></i>&nbsp;
+                      </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-2 p-3 custom-border" style="max-height: 300px; overflow-y: scroll;">
+            <div class="col-md-12 p-2">
+                <app-detail-cmd></app-detail-cmd>
+                <app-detail-cmd></app-detail-cmd>
+                <app-detail-cmd></app-detail-cmd>
+                <app-detail-cmd></app-detail-cmd>
+                <app-detail-cmd></app-detail-cmd>
+                <app-detail-cmd></app-detail-cmd>
+                <app-detail-cmd></app-detail-cmd>
+                <app-detail-cmd></app-detail-cmd>
+            </div>
+        </div>
+        <div class="row mt-2 p-1 custom-border " style=" text-align: right;">
+            <div class="col-md-12 p-2">
+                <h4>Totale de la commade : 135.9</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-12 " style=" text-align: right;">
+        <button class="btn btn-danger m-3">
+          <i class="fas fa-ban"></i>&nbsp; Annuler
+      </button>
+        <button class="btn btn-primary">
+          <i class="fas fa-save"></i>&nbsp; Enregistrer
+      </button>
+    </div>
+</div>
